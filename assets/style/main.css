@@ -9,7 +9,7 @@ a:hover {
     text-decoration: none;
 }
 .background {
-    background: url(/images/background-0.png) no-repeat;
+    background: url(images/background-0.png) no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
     background-size: cover;
