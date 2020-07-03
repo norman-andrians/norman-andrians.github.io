@@ -75,7 +75,7 @@ a:hover {
 .navbar ul li ul li {
     display: none;
 }
-.navbar ul li:focus-within ul li {
+.navbar ul li:hover ul li {
     display: block;
     border: none;
     font-size: 17px;
@@ -195,4 +195,13 @@ a:hover {
     -webkit-background-size: cover;
     background-size: cover;
     margin: -8px;
+}
+@media (min-width: 1280px) and (max-width: 2048px) {
+    .navbar ul li:focus-within ul li {
+        display: block;
+        border: none;
+        font-size: 17px;
+        width: 140px;
+        height: 42px;
+    }
 }
