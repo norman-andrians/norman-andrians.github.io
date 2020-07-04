@@ -75,7 +75,7 @@ a:hover {
 .navbar ul li ul li {
     display: none;
 }
-.navbar ul li:active ul li {
+.navbar ul li:focus-within ul li {
     display: block;
     border: none;
     font-size: 17px;
