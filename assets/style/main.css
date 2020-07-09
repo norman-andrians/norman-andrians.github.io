@@ -1,6 +1,9 @@
 body {
     background-color: black;
 }
+hr {
+    margin: 30px;
+}
 a {
     color: blue;
     font-weight: bold;
@@ -99,8 +102,8 @@ a:hover {
     font-family: Geneva;
 }
 .header-title-1 {
-    font-family: 'Lucida sans';
     text-align: center;
+    font-family: 'Lucida sans';
 }
 .nav-btn {
     display: inline-block;
@@ -144,6 +147,7 @@ a:hover {
 }
 .normal-element-btn > a > button:hover {
     border-color: yellow;
+    cursor: pointer;
     color: yellow;
 }
 .normal-element-btn > a > button:active {
@@ -163,10 +167,11 @@ a:hover {
 }
 .end-footer-sosmed-elemnt > a {
     text-decoration: none;
-    margin: 4px;
+    margin: 12px;
 }
 .end-footer-sosmed-elemnt > a > img {
     height: 40px;
+    border-radius: 5px;
 }
 .copyright {
     color: white;
@@ -196,12 +201,27 @@ a:hover {
     background-size: cover;
     margin: -8px;
 }
-@media (min-width: 1280px) and (max-width: 2048px) {
+@media (min-width: 1000px) and (max-width: 2048px) {
     .navbar ul li:focus-within ul li {
         display: block;
         border: none;
         font-size: 17px;
         width: 140px;
         height: 42px;
+    }
+    .paragraph {
+        font-size: medium;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .container-body {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+    .header-title-1 {
+        font-size: large;
     }
 }
