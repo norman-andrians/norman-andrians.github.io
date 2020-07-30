@@ -225,3 +225,15 @@ a:hover {
         font-size: large;
     }
 }
+@media (min-width: 120px) and (max-width: 480px) {
+    .container-body {
+        border-radius: 0px;
+        margin: -8px;
+        padding: 20px;
+    }
+    .container {
+        margin: 8px;
+        color: white;
+        text-align: center;
+    }
+}
