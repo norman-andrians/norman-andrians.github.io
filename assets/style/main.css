@@ -19,7 +19,8 @@ a:hover {
     margin: -8px;
 }
 .subtitle {
-    text-align: right;
+	position: fixed;
+    right: 5px;
 }
 .subtitle > a {
     text-decoration: none;
@@ -44,6 +45,9 @@ a:hover {
 }
 .header-img > img {
     width: 100px;
+}
+.navbar {
+	position: fixed;
 }
 .navbar ul {
     list-style: none;
@@ -236,4 +240,7 @@ a:hover {
         color: white;
         text-align: center;
     }
+	hr {
+    margin: 0px;
+	}
 }
