@@ -45,6 +45,20 @@ a:hover {
 }
 .header-img > img {
     width: 100px;
+	animation-name: anim-image;
+	animation-duration: 2s;
+}
+@keyframes anim-image {
+	from {
+		transform: rotateZ(0deg);
+		width: 0;
+		height: 0;
+	}
+	to {
+		transform: rotateZ(360deg);
+		width: 100;
+		height: 100;
+	}
 }
 .navbar {
 	position: fixed;
@@ -86,8 +100,13 @@ a:hover {
     display: block;
     border: none;
     font-size: 17px;
-    width: 140px;
-    height: 42px;
+    height: 40px;
+	animation-name: dropdown;
+	animation-duration: 1.5s;
+}
+@keyframes dropdown {
+	from {height: 0px; opacity: 0;}
+	to {height: 40px; opacity: 1;}
 }
 .container-body {
     background-color: black;
@@ -95,6 +114,16 @@ a:hover {
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
+	animation-name: start;
+	animation-duration: 6s;
+}
+@keyframes start {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: .9;
+	}
 }
 .container {
     margin: 12px;
@@ -155,7 +184,16 @@ a:hover {
     color: yellow;
 }
 .normal-element-btn > a > button:active {
-    margin-top: 2px;
+    animation-name: dropb;
+	animation-duration: 0.2s;
+}
+@keyframes dropb {
+	from {
+		margin-top: 0px;
+	}
+	to {
+		margin-top: 8px;
+	}
 }
 .element-normal-img {
     text-align: center;
