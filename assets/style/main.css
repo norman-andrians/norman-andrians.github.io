@@ -227,7 +227,10 @@ a:hover {
     background-attachment: fixed;
     -webkit-background-size: cover;
     background-size: cover;
-    margin: -8px;
+	margin-top: -3cm;
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-bottom: -8px;
 }
 .regular-element-header-title {
     text-align: center;
