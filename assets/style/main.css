@@ -62,7 +62,7 @@ a:hover {
 }
 .navbar {
 	position: fixed;
-	margin-top: -8.1cm;
+	margin-top: -8cm;
 	margin-left: -4.1cm;
 }
 .navbar ul {
@@ -276,6 +276,15 @@ a:hover {
     }
 }
 @media (min-width: 120px) and (max-width: 480px) {
+	.navbar {
+		margin-top: -7.7cm;
+		margin-left: -0.6cm;
+	}
+	.subtitle {
+		margin-top: -7.5cm;
+		margin-right: 8px;
+		right: 5px;
+	}
     .container-body {
         border-radius: 0px;
         margin: -8px;
