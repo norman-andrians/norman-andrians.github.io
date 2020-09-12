@@ -2,120 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="google-site-verification" content="lv3pWL0UwmoGbwPUUmHc9-n_tLTo3eFiufPvYW5ZTvA" />
-    <meta name="description" content="welcome to my github site, here is the beginning of our project"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="author" content="Norman Andrians"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="assets/style/main.css"/>
-    <link rel="icon" type="image/png" href="assets/image/icon.png"/>
-	<script data-ad-client="ca-pub-4972369207488589" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <title>Norman Andrians Official</title>
+    <link rel="icon" href="assets/image/icon.png"/>
+    <link rel="stylesheet" href="assets/style/main.css"/>
+    <script src="assets/script/app.js"></script>
+    <script src="assets/script/bootstrap.js"></script>
 </head>
 <body>
-    <div class="background">
-        <br />
-        <div class="header-img">
-            <img src="assets/image/logo.png" alt="Norman-Andrians"/>
-        </div>
-        <p><br /></p>
-        <div class="container-body">
-            <div class="container">
-				<div class="container-nav">
-					<nav class="navbar">
-						<ul>
-							<li><a href="#"><img src="assets/image/nav-image.png" alt="navigation"></a>
-								<ul class="sub-nav">
-									<li style="width: 240px;"><a href="">Home</a></li>
-									<li style="width: 240px;"><a href="about/">About</a></li>
-									<li style="width: 240px;"><a href="code/">Code</a></li>
-									<li style="width: 240px;"><a href="resourcepack/">Textures</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="subtitle">
-					<a href="">
-						<button type="button">English</button>
-					</a>
-					<a href="id-id/">
-						<button type="button">Indonesia</button>
-					</a>
-				</div>
-                <div class="header-title-0">
-                    <h1>Norman Andrian's</h1>
+    <div class="main-background" id="background">
+        <nav class="nav-container" id="container-nav">
+            <div class="navbar">
+                <ul class="navbar-list">
+                    <li><a href=""><button title="you already here">Home</button></a></li>
+                    <li><a href="about/"><button title="about my self">About</button></a></li>
+                    <li><a href="project/"><button title="my project">Project</button></a></li>
+                    <li><a href="games/"><button title="my games project in websites">Games</button></a></li>
+                </ul>
+            </div>
+            <nav class="navbar-0">
+                <div class="bootstrap">
+                    <button onclick="dropDown();" id="show">
+                        <div class="line"></div>
+                        <div class="line" style="margin-top: 6px; margin-bottom: 6px;"></div>
+                        <div class="line"></div>
+                    </button>
+                    <button onclick="dropaDown();" id="invisible" style="padding-top: 20px; padding-bottom: 20px;">
+                        <div class="line-0"></div>
+                        <div class="line-1"></div>
+                    </button>
+                    <div class="list-nav" id="dropdown">
+                        <ul>
+                            <li><a href=""><span id="text-0">Home</span></a></li>
+                            <li><a href="about/"><span id="text-1">About</span></a></li>
+                            <li><a href="project/"><span id="text-2">Project</span></a></li>
+                            <li><a href="games/"><span id="text-3">Games</span></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <hr />
-                <div class="header-title-1">
-                    <h3>About</h3>
+            </nav>
+        </nav>
+        <div class="img-background-header"></div>
+        <div class="container-body" id="text">
+            <div class="header-background-img" id="background">
+                <div class="header-img-logo-author">
+                    <img src="assets/image/logo.png" alt="Norman Andrians"/>
                 </div>
-                <div class="paragraph">
-                    <p>&nbsp; &nbsp;hello my name is Norman Andrianyah. usually called Norman. is creating and program HTML, CSS, javascript, C, C++, java, GLSL, PBR and POM. welcome to my first blog.I live in the country of born in Cilacap and live in Cimahi, i am 13 years old. my expertise is playing video games and coding html, css, glsl. I also own a small company called Arthenal Graphics ;P</p>
-                    <p>&nbsp; &nbsp; i make Normal map and Specular map for Minecraft. i learn resourcepack for Minecraft since 2018. at first i studied for pocket edition, Since i saw Youtube, i want to make a realistic texture pack. but i don't think that's possible. after that i saw on youtube, and i learn from <a href="https://continuum.graphics">Continuum Graphics</a></p>
-                    <p>&nbsp; &nbsp;first after I got to know the Minecraft game, I was curious and wanted to play it, but unfortunately the game was paid for. so I decided to look for a game that looks like Minecraft, then I found it. apparently what I got was an old version of Minecraft. it turns out it's also worse than I imagined, I only have a few blocks and fewer items. even during adventure there are only a few areas of the world. and after that I decided to delete it. by the way, that was my story when I was 10 years old and it was also searching on Google</p>
-                    <p>&nbsp; &nbsp;I look for a game that I think fills the saturation, I see an ad on YouTube where the game is similar to Minecraft. the game is called MWBA (Mini World: Block Art). there are games like PvP, rather than my guess that Minecraft can't do Multiplayer. I used to be a kid, so I don't know anything about Minecraft. a year later I downloaded Minecraft beta on 5play.ru version 1.9, that's where I got to know Minecraft. I'm free to do anything with the command. I never thought it was better than MWBA</p>
+                <h1>Norman Andrians</h1>
+            </div>
+            <div class="container-text">
+                <div id="btn-theme">
+                    <button onclick="OnDark();" id="off">Dark Theme: <span id="state">off</span></button>
+                    <button onclick="OffDark();" id="on">Dark Theme: <span id="state">on</span></button>
                 </div>
-                <br />
-                <div class="normal-element-btn">
-                    <a href="about/">
-                        <button type="button">
-                            <b>Read More</b>
-                        </button>
+                <div class="heading-article">
+                    <h3>About Norman Andrians</h3>
+                </div>
+                <article class="text-paragraph">
+                    <p>hello my name is Norman Andrianyah. usually called Norman. is creating and programing HTML, CSS, javascript, C, C++, java, GLSL, Lua, PBR and POM. welcome to my official website.I live in the country of born in Cilacap and live in Cimahi, i am 13 years old. my expertise is playing video games and coding html, css, glsl. I also own a small company called Arthenal Graphics</p>
+                    <p>i make Normal map and Specular map for Minecraft. i learn resourcepack for Minecraft since 2018. at first i studied for pocket edition, Since i saw Youtube, i want to make a realistic texture pack. but i don't think that's possible. after that i saw on youtube, and i learn from <a href="https://continuum.graphics" id="link">Continuum Graphics</a>. but unfortunately the project was discontinued and dismissed because our texture was considered less realistic, we will recreate it after learning a few things to draw</p>
+                </article>
+            </div>
+            <div class="button-link">
+                <a href="about/">
+                    <button><b>Read More</b></button>
+                </a>
+            </div>
+            <div class="container-text">
+                <div class="heading-article">
+                    <h3>Norman's Projects</h3>
+                </div>
+                <article class="text-paragraph">
+                    <span>the projects I make are various. some are for Minecraft, Creating Software, Website Template Design, Code Projects, etc. Come on, I'm just a 13 year old kid. painstakingly I made this project</span>
+                </article>
+                <div class="btn-projects-container-parent">
+                    <div class="project-btn-link">
+                        <a href="projects/resourcepacks/">
+                            <button>Resource Packs</button>
+                        </a>
+                    </div>
+                    <div class="project-btn-link">
+                        <a href="code/">
+                            <button>Code Projects</button>
+                        </a>
+                    </div>
+                    <div class="project-btn-link">
+                        <a href="coming-soon-page/">
+                            <button style="font-family: cursive;"><span style="color: red;">Imago</span><span style="color: blue;">Pict</span></button>
+                        </a>
+                    </div>
+                    <div class="project-btn-link">
+                        <a href="coming-soon-page">
+                            <button>Website Template</button>
+                        </a>
+                    </div>
+                    <div class="project-btn-link">
+                        <a href="undertale-fangame/">
+                            <button>Undertale FanGame</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="button-link">
+                    <a href="project/">
+                        <button><b>View More</b></button>
                     </a>
                 </div>
-                <hr />
-                <div class="header-title-1">
-                    <h3>Codes</h3>
-                </div>
-                <div class="paragraph">
-                    <p>&nbsp; &nbsp; welcome to my code site, here you can see the code and try / download my work code here, yes even though I might still be a noob. you can also edit and post / host anywhere, but if it has permission, you just contact me to <a href="norman25.na@gmail.com">Email</a>. I also received a<b> coto </b>(coding together) partner to participate on GitHub as a team. Remember, if you need help, maybe the code has an error or whatever, please just contact us. as soon as my developer won't sell any code, it's all free; D</p>
-                </div>
-                <br />
-                <div class="normal-element-btn">
-                    <a href="code/">
-                        <button type="button">
-                            <b>Read More</b>
-                        </button>
-                    </a>
-                </div>
-                <hr />
-                <div class="header-title-1">
-                    <h3>TexturePacks</h3>
-                </div>
-                <div class="element-normal-img">
-                    <img src="assets/image/Arthenal.png" alt="Arthenal"/>
-                    <img src="assets/image/Normals.png" alt="DNS"/>
-                    <img src="assets/image/corridor.png" alt="last-corridor"/>
-                </div>
-                <div class="paragraph">
-                    <p>&nbsp; &nbsp; Texture pack or also called resourcepack for Minecraft, is our project. we made a texturepack / resourcepack for Minecraft to change the texture of blocks, items, etc. and why did I make it? many Minecraft players are texture developers, because to replace them is very easy. Moreover, there is also a Shader developer for Minecraft. We make a variety of textures, but with a normal map and specular, so that the texture is more realistic than usual. My texture is also made by yourself, if you want to participate in making textures, connect our GitHub. POM and PBR textures are not ordinary textures, normal maps and specular maps, can only be made in certain software</p>
-                </div>
-                <div class="normal-element-btn">
-                    <a href="resourcepack/">
-                        <button type="button">
-                            <b>Read More</b>
-                        </button>
-                    </a>
+                <div class="container-text">
+                    <div class="heading-article">
+                        <h3>Websites Game Projects</h3>
+                    </div>
+                    <article class="text-paragraph">
+                        <p>this gaming website is the next project of another project. as the name suggests, this game aims to have fun and joke., there is also play puzzles</p>
+                    </article>
+                    <h4 style="text-align: center; margin: 30px;">Coming Soon</h2>
                 </div>
             </div>
         </div>
-        <h1><br /></h1>
     </div>
-    <div class="end-footer-element">
-        <div class="end-footer-sosmed-elemnt">
-            <a href="https://www.youtube.com/channel/UCWZrNCYJQ9hNk1O7ViSk6Iw">
-                <img src="assets/image/youtube.png" alt="youtube"/>
-            </a>
-            <a href="https://web.facebook.com/norman.andrians">
-                <img src="assets/image/fb.png" alt="facebook">
-            </a>
-            <a href="https://github.com/norman-andrians">
-                <img src="assets/image/github.png" alt="github">
-            </a>
+    <div class="end-footer-container-body">
+        <div class="sosmed-link-img">
+            <a href="https://www.youtube.com/channel/UCWZrNCYJQ9hNk1O7ViSk6Iw"><img src="assets/image/youtube.png" alt="youtube"/></a>
+            <a href="https://www.facebook.com/norman.andrians"><img src="assets/image/fb.png" alt="Facebook"/></a>
+            <a href="https://github.com/norman-andrians"><img src="assets/image/github.png" alt="GitHub"/></a>
         </div>
-        <div class="copyright">
-            <p>CopyRIght &copy; 2020 Norman Andrians. All Rights Reserved</p>
-        </div>
+        <br />
+        <span>CopyRight &copy; 2020 Norman Andrians, All Rights Reserved</span>
     </div>
 </body>
 </html>

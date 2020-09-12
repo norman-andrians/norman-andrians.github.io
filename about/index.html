@@ -2,80 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="description" content="hello everyone, my name is Norman Andriansyah"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="author" content="Norman Andrians"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>About</title>
-    <link rel="stylesheet" type="text/css" href="/assets/style/main.css"/>
-    <link rel="icon" type="image/png" href="/assets/image/icon.png"/>
+    <link rel="icon" href="../assets/image/icon.png"/>
+    <link rel="stylesheet" href="../assets/style/main.css"/>
+    <script src="../assets/script/app.js"></script>
 </head>
 <body>
-    <div class="background-0">
-        <div class="container-nav">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#"><img src="/assets/image/nav-image.png" alt="navigation"></a>
-                        <ul class="sub-nav">
-                            <li style="width: 240px;"><a href="/">Home</a></li>
-                            <li style="width: 240px;"><a href="">About</a></li>
-                            <li style="width: 240px;"><a href="/code">Code</a></li>
-                            <li style="width: 240px;"><a href="/resourcepack">Textures</a></li>
-                        </ul>
-                    </li>
+    <div class="main-background" id="background">
+        <nav class="nav-container" id="container-nav">
+            <div class="navbar">
+                <ul class="navbar-list">
+                    <li><a href="../"><button title="you already here">Home</button></a></li>
+                    <li><a href=""><button title="about my self">About</button></a></li>
+                    <li><a href="../project/"><button title="my project">Project</button></a></li>
+                    <li><a href="../games/"><button title="my games project in websites">Games</button></a></li>
                 </ul>
-            </nav>
-        </div>
-        <div class="subtitle">
-            <a href="">
-                <button type="button">English</button>
-            </a>
-            <a href="/id-id/about">
-                <button type="button">Indonesia</button>
-            </a>
-        </div>
-        <div class="regular-element-header-title">
-            <h1>About</h1>
-        </div>
-        <div class="container-body">
-            <div class="container">
-                <div class="header-title-1">
-                    <h3>About Me</h3>
-                </div>
-                <div class="paragraph">
-                    <p>&nbsp; &nbsp;hello my name is Norman Andrianyah. usually called Norman. is creating and program HTML, CSS, javascript, C, C++, java, GLSL, PBR and POM. welcome to my first blog.I live in the country of born in Cilacap and live in Cimahi, i am 13 years old. my expertise is playing video games and coding html, css, glsl. I also own a small company called Arthenal Graphics ;P</p>
-                    <p>&nbsp; &nbsp; i make Normal map and Specular map for Minecraft. i learn resourcepack for Minecraft since 2018. at first i studied for pocket edition, Since i saw Youtube, i want to make a realistic texture pack. but i don't think that's possible. after that i saw on youtube, and i learn from <a href="https://continuum.graphics">Continuum Graphics</a></p>
-                    <p>&nbsp; &nbsp;first after I got to know the Minecraft game, I was curious and wanted to play it, but unfortunately the game was paid for. so I decided to look for a game that looks like Minecraft, then I found it. apparently what I got was an old version of Minecraft. it turns out it's also worse than I imagined, I only have a few blocks and fewer items. even during adventure there are only a few areas of the world. and after that I decided to delete it. by the way, that was my story when I was 10 years old and it was also searching on Google</p>
-                    <p>&nbsp; &nbsp;I look for a game that I think fills the saturation, I see an ad on YouTube where the game is similar to Minecraft. the game is called MWBA (Mini World: Block Art). there are games like PvP, rather than my guess that Minecraft can't do Multiplayer. I used to be a kid, so I don't know anything about Minecraft. a year later I downloaded Minecraft beta on 5play.ru version 1.9, that's where I got to know Minecraft. I'm free to do anything with the command. I never thought it was better than MWBA</p>
-                </div>
-                <hr />
-                <div class="header-title-0">
-                    <h3>my story before getting to know Minecraft and making texture</h3>
-                </div>
-                <div class="paragraph">
-                    <p>&nbsp; &nbsp;a few weeks I saw a shader that made Minecraft Realistic, but after it was installed the source package didn't work, because the versions of gl and variables were different. look how stupid I am that there is a special video for Minecraft PE, but that is just a thumbnail of someone else's picture using the java edition. and not suitable to draw or you could say that the video is just clickbait, so it was just a trick, I was looking for MCPE, but that's also the same, only thumbnails and clickbait.</p>
-                    <p>&nbsp; &nbsp;a few months later, I started trying to make my own Resourcepack without seeing a tutorial on YouTube, which is pretty cool? I made a resourcepack that was originally a pirated texture, moreover I edited it a little and also the worst was uploaded to MCPE Master. illegal right? I decided to delete it and try not to create the resourcepack again. Moreover, the shader is also pirated.</p>
-                    <p>&nbsp; &nbsp; a few years later I have a PC (Personal Computer), I use it as coding, playing games, etc. a few months later I searched for free minecraft java edition. the name is TLauncher, I used to think TLauncher was very similar to Minecraft Launcher in general. but I realized after I tried to make Realm and also played premium servers like Hypixel. but I can be thankful for that because I can install shaders, so are the Normal map and Specular map features. so I can enjoy it</p>
-                    <p>&nbsp; &nbsp; that's when I started trying to make a resourcepack for Minecraft Java edition, in the resourcepack there are features like Normal, and also a specular map. it makes my Minecraft easier to play. a few weeks later I tried to create a resource pack similar to Ray Tracing called Arthenal. I tried to make the texture because I wanted to continue the generation of Ray Tracing Resourcepack by Indonesian children. so that's where Arthenal was born to make Minecraft more realistic with PBR and POM / Normals and Speculars.</p>
-                </div>
             </div>
+            <nav class="navbar-0">
+                <div class="bootstrap">
+                    <button onclick="dropDown();" id="show">
+                        <div class="line"></div>
+                        <div class="line" style="margin-top: 6px; margin-bottom: 6px;"></div>
+                        <div class="line"></div>
+                    </button>
+                    <button onclick="dropaDown();" id="invisible" style="padding-top: 20px; padding-bottom: 20px;">
+                        <div class="line-0"></div>
+                        <div class="line-1"></div>
+                    </button>
+                    <div class="list-nav" id="dropdown">
+                        <ul>
+                            <li><a href="../"><span id="text-0">Home</span></a></li>
+                            <li><a href=""><span id="text-1">About</span></a></li>
+                            <li><a href="../project/"><span id="text-2">Project</span></a></li>
+                            <li><a href="../games/"><span id="text-3">Games</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+        <div class="container-body" id="text">
+            <div class="norman-image">
+                <img src="../assets/image/about/preview.jpg" alt="about"/>
+            </div>
+            <div id="btn-theme" style="margin-top: 40px;" class="gtd">
+                <button onclick="OnDark();" id="off">Dark Theme: <span id="state">off</span></button>
+                <button onclick="OffDark();" id="on">Dark Theme: <span id="state">on</span></button>
+            </div>
+            <div class="heading-article">
+                <h3>About Norman Andrians</h3>
+            </div>
+            <article class="text-paragraph text-margin">
+                <p>hello my name is Norman Andrianyah. usually called Norman. is creating and programing HTML, CSS, javascript, C, C++, java, GLSL, Lua, PBR and POM. welcome to my official website.I live in the country of born in Cilacap and live in Cimahi, i am 13 years old. my expertise is playing video games and coding html, css, glsl. I also own a small company called Arthenal Graphics</p>
+                <p>i make Normal map and Specular map for Minecraft. i learn resourcepack for Minecraft since 2018. at first i studied for pocket edition, Since i saw Youtube, i want to make a realistic texture pack. but i don't think that's possible. after that i saw on youtube, and i learn from <a href="https://continuum.graphics" id="link">Continuum Graphics</a>. but unfortunately the project was discontinued and dismissed because our texture was considered less realistic, we will recreate it after learning a few things to draw</p>
+                <p>first after I got to know the Minecraft game, I was curious and wanted to play it, but unfortunately the game was paid for. so I decided to look for a game that looks like Minecraft, then I found it. apparently what I got was an old version of Minecraft. it turns out it's also worse than I imagined, I only have a few blocks and fewer items. even during adventure there are only a few areas of the world. and after that I decided to delete it. by the way, that was my story when I was 10 years old and it was also searching on Google</p>
+                <p>I look for a game that I think fills the saturation, I see an ad on YouTube where the game is similar to Minecraft. the game is called MWBA (Mini World: Block Art). there are games like PvP, rather than my guess that Minecraft can't do Multiplayer. I used to be a kid, so I don't know anything about Minecraft. a year later I downloaded Minecraft beta on <a href="https://5play.ru" id="link">5play.ru</a> version 1.9, that's where I got to know Minecraft. I'm free to do anything with the command. I never thought it was better than MWBA</p>
+            </article>
+            <div class="heading-article">
+                <h3>my story before getting to know Minecraft and making texture</h3>
+            </div>
+            <article class="text-paragraph text-margin" style="margin-bottom: 40px;">
+                <p>a few weeks I saw a shader that made Minecraft Realistic, but after it was installed the source package didn't work, because the versions of gl and variables were different. look how stupid I am that there is a special video for Minecraft PE, but that is just a thumbnail of someone else's picture using the java edition. and not suitable to draw or you could say that the video is just clickbait, so it was just a trick, I was looking for MCPE, but that's also the same, only thumbnails and clickbait.</p>
+                <p>a few months later, I started trying to make my own Resourcepack without seeing a tutorial on YouTube, which is pretty cool? I made a resourcepack that was originally a pirated texture, moreover I edited it a little and also the worst was uploaded to MCPE Master. illegal right? I decided to delete it and try not to create the resourcepack again. Moreover, the shader is also pirated.</p>
+                <p>a few years later I have a PC (Personal Computer), I use it as coding, playing games, etc. a few months later I searched for free minecraft java edition. the name is TLauncher, I used to think TLauncher was very similar to Minecraft Launcher in general. but I realized after I tried to make Realm and also played premium servers like Hypixel. but I can be thankful for that because I can install shaders, so are the Normal map and Specular map features. so I can enjoy it</p>
+                <p>that's when I started trying to make a resourcepack for Minecraft Java edition, in the resourcepack there are features like Normal, and also a specular map. it makes my Minecraft easier to play. a few weeks later I tried to create a resource pack similar to Ray Tracing called Arthenal. I tried to make the texture because I wanted to continue the generation of Ray Tracing Resourcepack by Indonesian children. so that's where Arthenal was born to make Minecraft more realistic with PBR and POM / Normals and Speculars.</p>
+            </article>
         </div>
-        <h1><br /></h1>
     </div>
-    <div class="end-footer-element">
-        <div class="end-footer-sosmed-elemnt">
-            <a href="https://www.youtube.com/channel/UCWZrNCYJQ9hNk1O7ViSk6Iw">
-                <img src="/assets/image/youtube.png" alt="youtube"/>
-            </a>
-            <a href="https://web.facebook.com/norman.andrians">
-                <img src="/assets/image/fb.png" alt="facebook">
-            </a>
-            <a href="https://github.com/norman-andrians">
-                <img src="/assets/image/github.png" alt="github">
-            </a>
+    <div class="end-footer-container-body">
+        <div class="sosmed-link-img">
+            <a href="https://www.youtube.com/channel/UCWZrNCYJQ9hNk1O7ViSk6Iw"><img src="../assets/image/youtube.png" alt="youtube"/></a>
+            <a href="https://www.facebook.com/norman.andrians"><img src="../assets/image/fb.png" alt="Facebook"/></a>
+            <a href="https://github.com/norman-andrians"><img src="../assets/image/github.png" alt="GitHub"/></a>
         </div>
-        <div class="copyright">
-            <p>CopyRIght &copy; 2020 Norman Andrians. All Rights Reserved</p>
-        </div>
+        <br />
+        <span>CopyRight &copy; 2020 Norman Andrians, All Rights Reserved</span>
     </div>
 </body>
 </html>
