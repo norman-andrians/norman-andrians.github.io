@@ -1,0 +1,58 @@
+.header-title-container {
+	background-color: black;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	margin: -8px;
+}
+.header-title-container > h1 {
+	font-family: Geneva;
+}
+.gamelist {
+	margin-top: 20px;
+}
+.gamelist > a {
+	text-decoration: none;
+}
+.gamelist-container {
+	background-color: rgb(50, 50, 50);
+	border-style: solid;
+	border-color: rgb(50, 50, 50);
+	border-width: 2px;
+	color: white;
+	margin-right: 3px;
+}
+.gamelist-container img {
+	width: 200px;
+	margin-top: 3px;
+}
+.gamelist-container:hover {
+	animation-name: hover-fade;
+	animation-duration: 0.4s;
+	background-color: black;
+	cursor: pointer;
+}
+@keyframes hover-fade {
+	from {
+		background-color: rgb(50, 50, 50);
+	} to {
+		background-color: black;
+	}
+}
+@media screen and (max-width: 480px) {
+	.gamelist {
+		text-align: center;
+	}
+	.header-title-container {
+		padding: 2px;
+	}
+	.header-title-container h1 {
+		font-size: larger;
+	}
+	.gamelist-container img {
+		width: 150px;
+	}
+	.gamelist-container {
+		font-size: x-small;
+	}
+}

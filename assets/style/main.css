@@ -109,7 +109,7 @@ body {
     font-weight: bold; text-align: center;
     width: 180px; border: none; background-color: lime;
     color: white; font-family: monospace;
-    font-size: large; height: 40px;
+    font-size: large; height: 40px; margin-top: 8px;
 } .project-btn-link > a > button:hover {
     background-color: green; cursor: pointer;
     animation-name: fade-1; animation-duration: 0.2s;
@@ -206,7 +206,7 @@ body.bgl {
     }
     .header-background-img {font-size: small;}
     .nav-container {width: 95.8%;}
-    .project-btn-link > a > button {width: 240px; margin-top: 8px; margin-bottom: 8px;}
+    .project-btn-link > a > button {width: 240px; margin-bottom: 8px;}
     .end-footer-container-body > span {font-size: x-small;}
     .sosmed-link-img > a > img {width: 40px; border-radius: 10px;}
     .sosmed-link-img > a:hover > img {width: 40px; animation: none;}
