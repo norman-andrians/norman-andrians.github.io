@@ -46,7 +46,7 @@ body {
     background-size: cover; background-repeat: no-repeat;
     padding: 40px; color: white; background-attachment: fixed;
 }
-.header-background-img h1 {animation-name: scales; animation-duration: 4s;}
+.header-background-img h1 {animation-name: scales; animation-duration: 4s; text-shadow: 5px 5px 4px rgba(0, 0, 0, .5)};
 @keyframes scales {
     0% {opacity: 0;}
     70% {opacity: 0;}
@@ -77,7 +77,7 @@ body {
 }
 .header-img-logo-author img {
     width: 200px;
-    animation-name: rotations; animation-duration: 2s;
+    animation-name: rotations; animation-duration: 2s; filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, .5));
 }
 @keyframes rotations {
     from {width: 0px; transform: rotate(-360deg);}

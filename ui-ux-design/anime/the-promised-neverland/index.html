@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Norman Andrians"/>
+    <title>The Promised Neverland</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/script/app.js"></script>
+</head>
+<body id="color-background">
+    <div class="cover">
+        <div class="title">
+            <h1 id="name">EMMA</h1> <h1 id="name-emma-kanji">エマ</h1><h1 id="name-norman-kanji">ノーマン</h1><h1 id="name-ray-kanji">レイ</h1>
+        </div>
+        <div class="date-container">
+            <h1 id="time">00:00</h1>
+            <h2 id="date">None 99, 9999</h2>
+        </div>
+        <div class="about">
+            <h1 style="margin-bottom: -4px; font-weight: bold; font-family: Geneva sans-serif;">About</h1>
+            <span id="about-text"><b>Emma</b> was born on August 22, 2034. She was sent to Grace Field House a year later in 2035. Under the parental care of Isabella and the happy times she spent with her fellow foster siblings, <b>Emma</b> had a happy childhood. Due to their close age and probably the fact that they are the top students academically, she was exceptionally close to <b>Norman</b> and <b>Ray</b> out of all the orphans in Grace Field</span>
+        </div>
+        <div class="progress">
+            <div class="intelligent-status">
+                <h2>Intelligence</h2><h2 id="intelligent-value">0</h2>
+                <div class="progress-bar"><div id="intelligent-bar"></div></div>
+            </div>
+            <div class="height-status">
+                <h2 style="transform: translateY(18px);">Height</h2><h2 id="height-value">0</h2>
+                <div class="progress-bar"><div id="height-bar"></div></div>
+            </div>
+        </div>
+        <div class="age-status">
+            <h2>Age</h2><h2 id="age-value">0</h2>
+            <div class="progress-bar-age"><div id="age-bar"></div></div>
+        </div>
+        <div class="character-container">
+            <h2>Select Character</h2>
+            <div class="character-change">
+                <div class="character-btn"><button onclick="SelectEmma();"><img src="assets/image/characters/icon/emma.png" alt="emma"/></button></div>
+                <div class="character-btn"><button onclick="SelectNorman();"><img src="assets/image/characters/icon/norman.png" alt="norman"/></button></div>
+                <div class="character-btn"><button onclick="SelectRay();"><img src="assets/image/characters/icon/ray.png" alt="ray"/></button></div>
+            </div>
+        </div>
+        <div class="character-img">
+            <div><img id="char-img" src="assets/image/characters/emma.png" alt="emma" title="Emma"/></div>
+        </div>
+    </div>
+</body>
+</html>

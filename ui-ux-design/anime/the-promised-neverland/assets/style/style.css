@@ -1,0 +1,271 @@
+#color-background {
+    background: linear-gradient(rgb(255, 205, 98), rgb(255, 174, 1));
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    margin: 0px auto;
+}
+.cover {
+    background-image: url(../image/splash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    animation-name: cover-anim;
+    animation-duration: 2s;
+}
+
+@keyframes cover-anim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.character-img {
+    text-align: center;
+}
+.character-img > div > img {
+    width: 10cm;
+    filter: drop-shadow(-10px 5px 2px rgba(0, 0, 0, 0.5));
+}
+
+#emma {
+    opacity: 1;
+    animation-name: fade-char;
+    animation-duration: 2s;
+}
+
+@keyframes fade-char {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.title {
+    margin-left: 30px;
+    font-size: x-large;
+    animation-name: name-op;
+    animation-duration: 2s;
+}
+
+@keyframes name-op {
+    from {
+        opacity: 0;
+        transform: translate(-200px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.title > h1 {
+    display: inline;
+}
+#name {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#name-emma-kanji {
+    color: rgb(255, 201, 86);
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: inline;
+}
+#name-norman-kanji {
+    color: rgb(0, 240, 240);
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: none;
+}
+#name-ray-kanji {
+    color: rgb(85, 85, 85);
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: none;
+}
+
+.date-container {
+    float: right;
+    background-color: white;
+    border-radius: 20px;
+    color: grey;
+    margin-right: 20px;
+    margin-bottom: -4cm;
+    font-family: Geneva;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 4cm;
+}
+
+#time {
+    font-family: system-ui, sans-serif;
+}
+
+.about {
+    margin-left: .8cm;
+    margin-top: 2cm;
+    color: white;
+    float: left;
+    width: 10cm;
+    font-family: serif;
+    
+    animation-name: about-op;
+    animation-duration: 3s;
+}
+
+@keyframes about-op {
+    from {
+        opacity: 0;
+        transform: translate(-200px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.progress {
+    color: white;
+    float: right;
+    transform: translate(-1cm, 320px);
+}
+.progress > .intelligent-status > h2 {
+    display: inline;
+}
+.progress > .age-status > h2 {
+    display: inline;
+}
+.progress-bar {
+    background-color: rgba(255, 255, 255, .5);
+    width: 300px;
+    height: 20px;
+    padding: 0 auto;
+    margin-top: 2px;
+    margin-bottom: -30px;
+}
+
+#intelligent-bar {
+    background-color: white;
+    height: 100%;
+    width: 73.5%;
+    animation-name: first-intelligent-bar;
+    animation-duration: 3s;
+}
+
+@keyframes first-intelligent-bar {
+    from {width: 0%;}
+    to {width: 73.5%;}
+}
+
+#intelligent-value {
+    display: inline;
+    transform: translateY(-20px);
+    float: right;
+}
+
+#height-bar {
+    background-color: white;
+    width: 79%;
+    height: 100%;
+    animation-name: first-height-bar;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes first-height-bar {
+    from {width: 0%}
+    to {with: 79%}
+}
+
+#height-value {
+    display: inline;
+    float: right;
+    transform: translateY(-50px);
+}
+
+.age-status {
+    float: right;
+    color: white;
+    transform: translate(262.5px, 435px);
+    margin-bottom: -4cm;
+}
+.age-status > h2 {
+    display: inline;
+}
+
+.progress-bar-age {
+    background-color: rgba(255, 255, 255, .5);
+    width: 300px;
+    height: 20px;
+    padding: 0 auto;
+    margin-top: 2px;
+    margin-bottom: -100px;
+}
+
+#age-bar {
+    background-color: white;
+    width: 13%;
+    height: 100%;
+    animation-name: first-age-bar;
+    animation-duration: 3s;
+}
+
+@keyframes first-age-bar {
+    from {width: 0%}
+    to {with: 13%}
+}
+
+#age-value {
+    float: right;
+    display: inline;
+    transform: translateY(-20px);
+}
+
+.character-container {
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: -9cm;
+    transform: translate(-380px, 320px);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+    float: left;
+    color: grey;
+    text-align: center;
+}
+.character-btn {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.character-btn > button {
+    background-color: rgb(220, 220, 220);
+    border: none;
+    border-radius: 20px;
+}
+.character-btn > button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+.character-btn > button:focus {
+    background-color: grey;
+    /*idk why it doesn't work -_-'*/
+    border: none;
+}
+.character-btn > button > img {
+    width: 100px;
+}

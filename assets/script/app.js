@@ -11,12 +11,13 @@ console.log("Licensed Under MIT License");
 
 // boostrap dropdown
 function dropDown() {
-    var down = document.getElementById("dropdown");
-    var invisible = document.getElementById("invisible");
-    var show = document.getElementById("show");
+    const down = document.getElementById("dropdown");
+    const invisible = document.getElementById("invisible");
+    const show = document.getElementById("show");
 
     var posy = 0;
-    var anim = setInterval(move, 6);
+    
+    const anim = setInterval(move, 6);
 
     function move() {
         if(posy >= 150) {
@@ -60,12 +61,13 @@ function dropDown() {
 
 // bootstrap dropup
 function dropaDown() {
-    var down = document.getElementById("dropdown");
-    var invisible = document.getElementById("invisible");
-    var show = document.getElementById("show");
+    const down = document.getElementById("dropdown");
+    const invisible = document.getElementById("invisible");
+    const show = document.getElementById("show");
 
     var posy = 150;
-    var anim = setInterval(move, 6);
+    
+    const anim = setInterval(move, 6);
 
     function move() {
         var textanim1 = document.getElementById("text-0");
@@ -107,21 +109,27 @@ function dropaDown() {
 
 // Dark Mode: on
 function OnDark() {
-    var off = document.getElementById("off");
-    var on = document.getElementById("on");
+    const off = document.getElementById("off");
+    const on = document.getElementById("on");
 
-    var darkbg = document.getElementById("background");
-    var darknav = document.getElementById("container-nav");
-    var text = document.getElementById("text");
+    const darkbg = document.getElementById("background");
+    const darknav = document.getElementById("container-nav");
+    const text = document.getElementById("text");
 
-    var dropdown = document.getElementById("dropdown");
+    const dropdown = document.getElementById("dropdown");
+    
+    const link = document.querySelectorAll("#link");
+    
+    for(var a = 0; a < link.length; a++) {
+        link[a].style.color = "white";
+    }
     
     dropdown.style.backgroundColor = "rgb(50, 50, 50)";
 
     darkbg.style.backgroundColor = "rgb(40, 40, 40)";
     darknav.style.backgroundColor = "rgb(64, 64, 64)";
     
-    text.style.color = "rgb(226, 226, 226)";
+    text.style.color = "rgb(225, 225, 225)";
 
     off.style.display = "none";
     on.style.display = "block";
@@ -129,14 +137,21 @@ function OnDark() {
 
 // Dark Mode: on
 function OffDark() {
-    var off = document.getElementById("off");
-    var on = document.getElementById("on");
+    const off = document.getElementById("off");
+    const on = document.getElementById("on");
 
-    var darkbg = document.getElementById("background");
-    var darknav = document.getElementById("container-nav");
-    var text = document.getElementById("text");
+    const darkbg = document.getElementById("background");
+    const darknav = document.getElementById("container-nav");
+    const text = document.getElementById("text");
 
-    var dropdown = document.getElementById("dropdown");
+    const dropdown = document.getElementById("dropdown");
+    
+    const link = document.querySelectorAll("#link");
+    
+    for(var a = 0; a < link.length; a++) {
+        link[a].style.color = "black";
+    }
+    
     dropdown.style.backgroundColor = "rgb(199, 199, 199)";
 
     darkbg.style.backgroundColor = "white";

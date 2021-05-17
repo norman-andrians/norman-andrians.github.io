@@ -1,0 +1,91 @@
+body {
+    background-image: url(../assets/image/cover-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bod {
+    margin: 0 auto;
+    animation-name: fade-start;
+    animation-duration: 3s;
+}
+
+@keyframes fade-start {
+    from {opacity: 0;}
+    20% {opacity: 0;}
+    to [opacity: 1;]
+}
+
+.game-title {
+    margin: 1cm;
+    font-family: 'Copper Gothic Bold';
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, .8);
+    font-size: larger;
+    animation: slide-anim 1s;
+}
+
+.logo-image {
+    text-align: center;
+}
+.logo-image > img {
+    width: 14%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 25px;
+}
+.download-btn {
+    text-align: center;
+}
+.download-btn > button {
+    background: none;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1);
+    border-width: 4px;
+    color: white;
+    font-family: 'Franklin Demi';
+    font-size: x-large;
+    
+    width: 5.1cm;
+    margin: 1cm;
+    padding: 4px;
+    
+    transition: .2s;
+}
+.btn-anim > button:hover {
+    border-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+.end-download {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: larger;
+}
+
+@font-face {
+    font-family: 'Copper Gothic Bold';
+    src: url(../assets/font/COPRGTB.ttf);
+}
+
+@font-face {
+    font-family: 'Franklin Demi';
+    src: url(../assets/font/FRADM.ttf);
+}
+
+@media screen and (max-width: 640px) {
+    .logo-image > img {
+        width: 30%
+    }
+    .end-download {
+        font-size: medium;
+    }
+    .download-btn > button {
+        font-size: larger;
+        border-width: 3px;
+        width: 4cm;
+    }
+}
