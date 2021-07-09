@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment Code</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button>Click Here</button>
+    <script>
+        var i = "red";
+        var s = 10000;
+
+        function bgcolor(clr) {
+            const bg = document.querySelectorAll("body")[0];
+            bg.style.backgroundColor = clr;
+
+            return clr;
+        }
+
+        window.onload = function () {
+            const btn = document.querySelectorAll('button')[0].addEventListener('click', function () {
+                function stim(f, d) {
+                    setTimeout(bgcolor(f), d);
+                    return f, d;
+                }
+                stim(i, s);
+            });
+        };
+    </script>
+</body>
+</html>
