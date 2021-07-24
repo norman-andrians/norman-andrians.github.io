@@ -12,8 +12,53 @@
         <div class="bod">
             <div class="game-title"><h1>Extreme Maze 3D</h1></div>
             <div class="logo-image"><img src="./assets/image/logo.png" alt="logo"/></div>
-            <div class="download-btn btn-anim"><button type="button" id="download-click">Download</button></div>
-            <div class="github-link"><a href="https://github.com/norman-andrians/extreme-maze-3d" title="this is where the code and assets are stored along with the changes">Source Code Github</a></div>
+            <div class="main-container">
+                <div class="nav">
+                    <button class="nav-windows" id="win-btn" onclick="winEvent();">Windows</button>
+                    <button class="nav-android" id="android-btn" onclick="androidEvent();">Android</button>
+                </div>
+                <div class="game-article">
+                    <h3 class="about">About Extreme Maze 3D</h3>
+                    <article class="about-article">Extreme Maze 3D is a game where you are required to pass obstacles in a dark maze that has little light. The light is found in the coins and balls that you control as a player. This maze is compiled with an algorithm code and then converted into a mesh form as a model for the maze</article>
+                    <table>
+                        <tr>
+                            <td>Name</td><td> : </td><td>Extreme Maze 3D</td>
+                        </tr>
+                        <tr>
+                            <td>Game By</td><td> : </td><td>Norman Andrians</td>
+                        </tr>
+                        <tr>
+                            <td>Version</td><td> : </td><td>v0.47 Beta Pre-release</td>
+                        </tr>
+                        <tr>
+                            <td>Game Size</td><td> : </td><td id="size-game">0MB</td>
+                        </tr>
+                        <tr>
+                            <td>File Format</td><td> : </td><td id="format-file"></td>
+                        </tr>
+                    </table>
+                    <h3 class="device-rq">Required device specifications</h3>
+                    <table>
+                        <tr id="dev-0">
+                            <td>Operation System</td><td> : </td><td>Windows 7 64-bit, Windows 8.1 64bit, WIndows 10 64bit</td>
+                        </tr>
+                        <tr id="dev-1">
+                            <td>Processor</td><td> : </td><td>-</td>
+                        </tr>
+                        <tr id="dev-2">
+                            <td>Graphics Card</td><td> : </td><td>-</td>
+                        </tr>
+                        <tr id="dev-3">
+                            <td>Memory</td><td> : </td><td>4GB RAM</td>
+                        </tr>
+                        <tr id="dev-4">
+                            <td>Storage</td><td> : </td><td>300MB free space</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="download-btn btn-anim"><button type="button" id="download-click">Download</button></div>
+                <div class="github-link" id="hide"><a href="https://github.com/norman-andrians/extreme-maze-3d" title="this is where the code and assets are stored along with the changes">Source Code Github</a></div>
+            </div>
             <div class="end-download"><span>Copyright &copy; 2021 Norman Andrians, All Rights Reserved</span></div>
         </div>
     </body>
