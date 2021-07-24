@@ -32,6 +32,9 @@ window.onload = function() {
 	}
 
     const downloadclick = document.getElementById('download-click').addEventListener('click', function() {
+		const hided = document.getElementById('hide');
+		hided.style.display = "block";
+
         if (isWindows) {
         	downloadWindows();
         } else if (navigator.userAgent.match(/Mac Os/i)) {
