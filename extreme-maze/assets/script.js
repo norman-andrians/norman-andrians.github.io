@@ -2,6 +2,8 @@
  * idk, i'm too lazy to make it
  */
 
+console.log("ngapain liat-liat >:v")
+
 var isWindows = false;
 var isAndroid = false;
 
@@ -36,11 +38,13 @@ window.onload = function() {
 		hided.style.display = "block";
 
         if (isWindows) {
+        	console.log("memperoses download untuk windows");
         	downloadWindows();
         } else if (navigator.userAgent.match(/Mac Os/i)) {
         	alert("I'm sorry but you can only download for Windows");
         	alert("but don't worry, we will make it for Mac Os ;)");
         } else if (isAndroid) {
+        	console.log("memperoses download untuk android");
 			downloadAndroid();
         } else {
 			
@@ -51,11 +55,15 @@ window.onload = function() {
 function downloadWindows() {
 	window.location.href = 'https://github.com/norman-andrians/extreme-maze-3d/releases/download/v0.47-beta/extreme_maze_3d-win-0.47-beta.zip';
     downloadclick.download = 'extreme_maze_3d-win-0.47-beta.zip';
+
+    console.warn("bila download tidak berhasil, buka https://github.com/norman-andrians/extreme-maze-3d/releases/download/v0.47-beta");
 }
 
 function downloadAndroid() {
 	window.location.href = './assets/files/android/extreme_maze_3d-android-0.47-beta.apk';
 	downloadclick.download = 'extreme_maze_3d-android-0.47-beta.apk';
+
+	console.warn("bila download tidak berhasil, buka https://github.com/norman-andrians/norman-andrians.github.io/tree/master/extreme-maze/assets/files/android/");
 }
 
 function winEvent() {
@@ -63,6 +71,7 @@ function winEvent() {
 	isAndroid = false;
 
 	const dev0 = document.getElementById('dev-0');
+	const dev5 = document.getElementById('dev-0-0');
 	const dev1 = document.getElementById('dev-1');
 	const dev2 = document.getElementById('dev-2');
 	const dev3 = document.getElementById('dev-3');
@@ -80,12 +89,15 @@ function winEvent() {
 	gameSiz.innerHTML = windowsSize;
 	formatFil.innerHTML = zip;
 	
-	dev0.childNodes[3].innerHTML = "Windows 7 64-bit, Windows 8.1 64bit, WIndows 10 64bit";
+	dev0.childNodes[3].innerHTML = "Windows 7, 8.1, 10";
 	dev3.childNodes[3].innerHTML = "4GB RAM";
 	dev4.childNodes[3].innerHTML = "300MB free space";
+	dev5.childNodes[3].innerHTML = "86x, 64-bit";
 
 	androidBtn.style.background = "none";
 	androidBtn.style.color = "black";
+
+	console.log("beralih ke windows");
 }
 
 function androidEvent() {
@@ -93,6 +105,7 @@ function androidEvent() {
 	isAndroid = true;
 	
 	const dev0 = document.getElementById('dev-0');
+	const dev5 = document.getElementById('dev-0-0');
 	const dev1 = document.getElementById('dev-1');
 	const dev2 = document.getElementById('dev-2');
 	const dev3 = document.getElementById('dev-3');
@@ -113,13 +126,17 @@ function androidEvent() {
 	dev0.childNodes[3].innerHTML = "Android 6 or higher";
 	dev3.childNodes[3].innerHTML = "2GB RAM";
 	dev4.childNodes[3].innerHTML = "200MB free space";
+	dev5.childNodes[3].innerHTML = "ARMv7, ARMeabi-v7a";
 
 	androidBtn.style.background = "rgb(0, 124, 207)";
 	androidBtn.style.color = "white";
+
+	console.log("beralih ke android");
 }
 
 function Start() {
 	const dev0 = document.getElementById('dev-0');
+	const dev5 = document.getElementById('dev-0-0');
 	const dev1 = document.getElementById('dev-1');
 	const dev2 = document.getElementById('dev-2');
 	const dev3 = document.getElementById('dev-3');
@@ -129,26 +146,32 @@ function Start() {
 	const formatFil = document.getElementById('format-file');
 
 	if (navigator.userAgent.match(/Windows/i)) {
-		dev0.childNodes[3].innerHTML = "Windows 7 64-bit, Windows 8.1 64bit, WIndows 10 64bit";
+		dev0.childNodes[3].innerHTML = "Windows 7, 8.1, 10";
 		dev3.childNodes[3].innerHTML = "4GB RAM";
 		dev4.childNodes[3].innerHTML = "300MB free space";
+		dev5.childNodes[3].innerHTML = "86x, 64-bit";
 
 		gameSiz.innerHTML = windowsSize;
 		formatFil.innerHTML = zip;
 
 		isWindows = true;
 		isAndroid = false;
+
+		console.log("windows user");
 	}
 	else if (navigator.userAgent.match(/Android/i)) {
 		dev0.childNodes[3].innerHTML = "Android 6 or higher";
 		dev3.childNodes[3].innerHTML = "2GB RAM";
 		dev4.childNodes[3].innerHTML = "200MB free space";
+		dev5.childNodes[3].innerHTML = "ARMv7, ARMeabi-v7a";
 
 		gameSiz.innerHTML = AndroidSize;
 		formatFil.innerHTML = apk;
 
 		isWindows = false;
 		isAndroid = true;
+
+		console.log("android user");
 	}
 }
 
